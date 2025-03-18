@@ -1,0 +1,26 @@
+{
+  "name": "mvc-mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mu-kumaran/mvc-mongoose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mu-kumaran/mvc-mongoose/issues"
+  },
+  "homepage": "https://github.com/mu-kumaran/mvc-mongoose#readme",
+  "dependencies": {
+    "mongoose": "^8.12.1",
+    "nodemon": "^3.1.9"
+  }
+}
