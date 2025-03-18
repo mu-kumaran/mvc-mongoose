@@ -1,0 +1,12 @@
+Moongose library
+-----------------
+Steps for installing mongoose library:
+--------------------------------------
+1. Create new folder and open with vs code
+2. open terminal using ctrl + ~
+3. >> npm init -y 
+4. >> npm i nodemon --save-dev
+5. create script.js file
+6. package.json --> "scripts" --> "test":.... , (put comma) --> write "dev":"nodemon script.js"
+7. >> npm run dev  
+8. >> npm i mongoose (in another terminal)
