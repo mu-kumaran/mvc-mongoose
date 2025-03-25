@@ -12,7 +12,20 @@ mongoose.connect("mongodb://127.0.0.1:27017/manojdb").then(()=>{
 
 // Inserting data into mongodb through mongoose
 var hob = ["Books","Movies","Travel"]
-const usr = new User({rno:1006,sname:"THANGAVEL",mark:79,hobbies:hob,city:"covai"})
-usr.save().then(()=>{
-    console.log("successfully inserted")
-}) 
+const usr = new User({rno:1007,sname:"Vimalan",mark:89,hobbies:hob,city:"chennai"})
+// usr.save().then(()=>{
+//     console.log("successfully inserted")
+// })
+
+async function manoj()
+{
+    try{
+        const dataset = await usr.save()
+        console.log("Success! Inserted Id",dataset)
+    }
+    catch(err){
+        console.log("Error",err)
+    }
+}
+
+manoj();

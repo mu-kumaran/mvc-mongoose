@@ -1,4 +1,8 @@
 const mongoose = require("mongoose")
+const addressSchema = new mongoose.Schema({
+    street:String,
+    landmark: String
+})
 const userSchema = new mongoose.Schema({
     /*  Normal format
        rno: Number,
@@ -34,6 +38,10 @@ const userSchema = new mongoose.Schema({
             validator: c=> (c==="karur"||c==="chennai"||c==="covai"),
             message: `city is not allowed`
         }
+    },
+    address:{
+        type: addressSchema,
+        required:true
     }
 })
 
