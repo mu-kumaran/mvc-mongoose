@@ -10,7 +10,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/manojdb").then(()=>{
     console.log("db error")
 })
 
-//Finding data from mongodb through mongoose using User.find() & User.findById() method
+//CRUD operation through mongoose
 
 async function manoj()
 {
