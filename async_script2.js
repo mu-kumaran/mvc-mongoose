@@ -23,6 +23,18 @@ async function manoj()
         const data5 = await User.where("mark").gt(50)
         const data6 = await User.where("mark").gt(50).lt(80)
         const data7 = await User.where("mark").gt(50).limit(1) // .skip(1)
+        const deldata = await User.deleteOne({rno:1001})
+        const data8 = await User.insertOne({
+            rno:1001,
+            sname:"Palanivel",
+            mark:45,
+            city:"karur",
+            address:{
+                DoorNo: "45-B",
+                street: "Ambedkar street",
+                landmark: "near leela garden"
+            }
+        })
         console.log("My Result:",dataset)
         console.log("My Result1:",data1)
         console.log("My Result2:",data2)
@@ -33,6 +45,8 @@ async function manoj()
         console.log("My Result6:",data6)
         console.log("My Result6:",data6.length)
         console.log("My Result7:",data7)
+        console.log("My deldata:",deldata)
+        console.log("My Result8:",data8)
     }
     catch(err){
         console.log("Error Reason:",err.toString())
